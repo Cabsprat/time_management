@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:math';
+import 'package:ionicons/ionicons.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:time_management_dashboard/helpers/style.dart';
@@ -41,7 +42,8 @@ class _DashboardPageState extends State<DashboardPage> {
         backgroundColor: const Color.fromARGB(255, 127, 167, 189),
         elevation: 0.0,
         centerTitle: true,
-        leading: const Icon(Icons.keyboard_return, color: Colors.white),
+        leading: IconButton(
+            onPressed: () {}, icon: const Icon(Ionicons.return_down_back)),
         title: const Text(
           "Dashboard",
           style: TextStyle(
